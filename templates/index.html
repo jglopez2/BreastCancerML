@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Breast Cancer Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+
+    	<input type="text" name="Mean Radius" placeholder="Mean Radius" required="required" />
+        <input type="text" name="texture1" placeholder="texture1" required="required" />
+		<input type="text" name="perimeter1" placeholder="perimeter1" required="required" />
+		<input type="text" name="area1" placeholder="area1" required="required" />
+        <input type="text" name="smoothness1" placeholder="smoothness1" required="required" />
+        <input type="text" name="compactness1" placeholder="compactness1" required="required" />
+		<input type="text" name="concavity1" placeholder="concavity1" required="required" />
+		<input type="text" name="concave_points1" placeholder="concave_points1" required="required" />
+		<input type="text" name="symmetry1" placeholder="symmetry1" required="required" />
+		<input type="text" name="fractal_dimension1" placeholder="fractal_dimension1" required="required" />
+		<input type="text" name="radius2" placeholder="radius2" required="required" />
+		<input type="text" name="texture2" placeholder="texture2" required="required" />
+		<input type="text" name="perimeter2" placeholder="perimeter2" required="required" />
+		<input type="text" name="area2" placeholder="area2" required="required" />
+        <input type="text" name="smoothness2" placeholder="smoothness2" required="required" />
+		<input type="text" name="compactness2" placeholder="compactness2" required="required" />
+		<input type="text" name="concavity2" placeholder="concavity2" required="required" />
+		<input type="text" name="concave_points2" placeholder="concave_points2" required="required" />
+		<input type="text" name="symmetry2" placeholder="symmetry2" required="required" />
+		<input type="text" name="fractal_dimension2" placeholder="fractal_dimension2" required="required" />
+		<input type="text" name="radius3" placeholder="radius3" required="required" />
+		<input type="text" name="texture3" placeholder="texture3" required="required" />
+		<input type="text" name="perimeter3" placeholder="perimeter3" required="required" />
+        <input type="text" name="area3" placeholder="area3" required="required" />
+		<input type="text" name="smoothness3" placeholder="smoothness3" required="required" />
+		<input type="text" name="compactness3" placeholder="compactness3" required="required" />
+		<input type="text" name="concavity3" placeholder="concavity3" required="required" />
+		<input type="text" name="concave_points3" placeholder="concave_points3" required="required" />
+		<input type="text" name="symmetry" placeholder="area2" symmetry="required" />
+		<input type="text" name="fractal_dimension" placeholder="fractal_dimension" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

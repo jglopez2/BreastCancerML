@@ -1,0 +1,4 @@
+1. Create pipelines for each of the machine learning models incorporating StandardScaler for x_train
+2. Check for machine learning model accuracy
+2. Deploy the machine learning model
+3. Design flask
