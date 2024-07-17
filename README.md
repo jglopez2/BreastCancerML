@@ -14,3 +14,8 @@ The continuous data are marked with 1, 2, or 3, indicating their data type:
 
 # Data Sources
 The data is taken from: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic.
+
+# Goals
+Currently, this is still in the development stages. The following are still not accomplished.
+* 1: Check if the model is not overfitting.
+* 2: Deploy the model using Flask, HTML, and CSS.
